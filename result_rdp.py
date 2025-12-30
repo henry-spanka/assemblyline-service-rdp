@@ -1,6 +1,7 @@
 from assemblyline_v4_service.common.base import ServiceBase
 from assemblyline_v4_service.common.request import ServiceRequest
 from assemblyline_v4_service.common.result import Result, ResultSection, BODY_FORMAT
+import json
 
 class Rdp(ServiceBase):
     def __init__(self, config=None):
