@@ -33,6 +33,6 @@ heuristics: []
 #  - the name of the docker container that will be created
 #  - CPU and ram allocation by the container
 docker_config:
-  image: ${REGISTRY}couponroller/assemblyline-service-rdp:latest
+  image: ${REGISTRY}couponroller/assemblyline-service-rdp:main
   cpu_cores: 1.0
   ram_mb: 128
