@@ -33,15 +33,11 @@ class Rdp(ServiceBase):
         result = Result()
 
         # 2. Create a section to be displayed for this result
-        text_section = ResultSection('CAPEv2 RDP', body_format=BODY_FORMAT.URL,
+        url_section = ResultSection('CAPEv2 RDP', body_format=BODY_FORMAT.URL,
                                      body=json.dumps({"name": "RDP File", "url": rdpUrl}))
 
-        # 2.1. Add lines to your section
-        text_section.add_line("This is a line displayed in the body of the section")
-
-
         # 3. Make sure you add your section to the result
-        result.add_section(text_section)
+        result.add_section(url_section)
 
         # 4. Wrap-up: Save your result object back into the request
         request.result = result
